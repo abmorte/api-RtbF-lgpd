@@ -63,7 +63,6 @@ Submit  `Compartilhar` transaction:
 }
 ```
 O Titular consente o tratameto e compartilha os seus dados pessoais (PII, PPII e NPII) com o Controlador
-
 | Artigo LGPD |                                                                                                                                                                                                                                                               |                                                                                                                    |
 |:-----------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------:|
 | 7º          | O tratamento de dados pessoais somente pode ser realizado nas seguintes hipóteses:  I - mediante o fornecimeno de consentimento pelo titular; § 4º - é dispensada a exigência de consentimento [...] para dados tornados manifestamente públicos pelo Titular | call compartilhar (Dados dados-pessoais*, Destino operador\|controlador*, Boolean consentimento, Boolean publicos) |
@@ -72,8 +71,6 @@ O Titular consente o tratameto e compartilha os seus dados pessoais (PII, PPII e
 | Gnu         | stuffed                                                                                                                                                                                                                                                       |                                                                                                              92.50 |
 | Emu         | stuffed                                                                                                                                                                                                                                                       |                                                                                                              33.33 |
 | Armadillo   | frozen                                                                                                                                                                                                                                                        |                                                                                                               8.99 |
-
-
 ## License <a name="license"></a>
 http://creativecommons.org/licenses/by/4.0/
 
