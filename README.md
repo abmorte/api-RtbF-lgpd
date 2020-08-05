@@ -14,7 +14,7 @@ Definição da BNt:
 **Participantes**
 `Titular` `Controlador` `Operador`
 <<TODO> inserir figura do livro HandsOn Hyperledger>>
-![Visão Geral da Rede](http://developer.r-project.org/Logo/Rlogo-5.png)
+![Visão Geral da Rede] [[/images/visao-geral-rede.png]]
 
 **Ativos**
 `Dados Pessoais (PII, PPII e NPII)` `Termos do Contrato` `Compartilhamento`
