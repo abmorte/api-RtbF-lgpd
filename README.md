@@ -14,14 +14,14 @@ Definição da BNt:
 **Participantes**
 `Titular` `Controlador` `Operador`
 <<TODO> inserir figura do livro HandsOn Hyperledger>>
-![Logo do R](http://developer.r-project.org/Logo/Rlogo-5.png)
+![Visão Geral da Rede](http://developer.r-project.org/Logo/Rlogo-5.png)
 
 **Ativos**
 `Dados Pessoais (PII, PPII e NPII)` `Termos do Contrato` `Compartilhamento`
 
 
 **Transações Rede**
-`1. formar-rede` `2. aderir-rede`  `2.3 aceitar-termos-contrato` `2.3.4 consentir-tratamento` `obter-dados-pessoais` `compartilhar-dados-pessoais` `notificar-tratamento-dados-pessoais` `excluir-dados-pessoais` `notificar-exclusao-ddaos-pessoais` `retificar-dados-pessoais` `notificar-retificacao-dados-pessoais`
+`1. formar-rede` `2. aderir-rede`  `2.3 aceitar-termos-contrato` `2.3.4 consentir-tratamento` `3.compartilhar-dados-pessoais` `obter-dados-pessoais`  `notificar-tratamento-dados-pessoais` `excluir-dados-pessoais` `notificar-exclusao-ddaos-pessoais` `retificar-dados-pessoais` `notificar-retificacao-dados-pessoais`
 
 **Regras de negócio**
 `formar-rede (genesis)`
