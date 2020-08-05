@@ -3,21 +3,57 @@
 > 2. Descrição da api com a assinatura dos métodos para provimento do Direito ao Esquecimento e Retificação da LGPD - Lei Geral de Proteção de Dados Pessoais.
 
 
-** Business Network**
+**1. Business Network (BNt)**
 
 > BNt formada pelo Titular, Controlador e Operador.
+> referência 1: https://cloud.ibm.com/docs/blockchain?topic=blockchain-swagger-network
+> referência 2: https://cloud.ibm.com/docs/blockchain?topic=blockchain-ibp-swagger#ibp-swagger
 
 Definição da BNt:
 
 **Participantes**
 `Titular` `Controlador` `Operador`
+<<TODO> inserir figura do livro HandsOn Hyperledger>>
+![Logo do R](http://developer.r-project.org/Logo/Rlogo-5.png)
 
 **Ativos**
-`PII` `PPII` `NPII` `Termos do Contrato` `Compartilhamento`
+`Dados Pessoais (PII, PPII e NPII)` `Termos do Contrato` `Compartilhamento`
 
 
-**Transações**
-`Autenticar` `Compartilhar` `Esquecer` `Retificar`
+**Transações Rede**
+`1. formar-rede` `2. aderir-rede`  `2.3 aceitar-termos-contrato` `2.3.4 consentir-tratamento` `obter-dados-pessoais` `compartilhar-dados-pessoais` `notificar-tratamento-dados-pessoais` `excluir-dados-pessoais` `notificar-exclusao-ddaos-pessoais` `retificar-dados-pessoais` `notificar-retificacao-dados-pessoais`
+
+**Regras de negócio**
+`formar-rede (genesis)`
+1.1 - A rede deve permitir/controlar a adesão de 1 Titular.      Exemplo: Motorista Uber. Cada instância desse Órgão Motorista é um motorista em particular (peer).
+1.1.1 - A rede deve habilitar interface para adesão de 1 Titular
+1.2 - A rede deve permitir/controlar a adesão de 1 Controlador.  Exemplo: Uber. Cada servidor da Uber é um peer.
+1.2.1 - A rede deve habilitar interface para adesão de 1 Controlador
+1.3 - A rede deve permitir/controlar a adesão de 1 Operador.     Exemplo: Serpro. Cada servidor do Serpro é um peer.
+1.3.1 - A rede deve habilitar interface para adesão de 1 Operador
+1.4 - A aceitação dos termos do contrato deve ser um pré-requisito para adesão da organização à rede.
+call formar-rede()
+
+`aderir-rede`
+2.1 - A organização deve identificar-se como Titular, Controlador ou Operador
+2.2 - A organização deve estar em território brasileiro [Art. 3º, inciso I] - a operaçao de tratamento seja realizada em territorio nacional. inciso II - os dados pessoais objeto do tratamento tenham sido coletados em territorio nacional
+
+call aderir-rede(TipoOrg tipoOrg [Titular, Controlador, Operador])
+
+2.3 - A organização deve aceitar os termos do contrato
+ subcall `aceitar-termos-contrato`()
+ ps. Vide exemplo adaptado de ONIK:
+  1. Apague dados ao término do tratamento (Art.16) 
+  2. Apague os dados mediante solicitação do titular (Art. 18)
+  2. Tratamento de Dados deve ser realizado em território brasileiro (Escopo de dados no Brasil)
+  3. Notificar violação de dados dentro de 72 horas 
+  - (Art. 9º - O titular tem o direito ao acesso facilitado às informações sobre o tratamento de seus dados de forma clara [...])
+  4. Cada tratamento (distribuição inclusive) de dados de notificação ao Titular, e precisa do consentimento deste (Art. 18)
+  5. O tratamento de dados será cessado quando da revogação do consentimento ou a pedido da ANPR? (art. 15)
+  ps. Mapear a ANPR também como uma organização da rede?
+ 
+  
+ 
 
 
 Exemplos:
